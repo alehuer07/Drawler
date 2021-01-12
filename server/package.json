@@ -1,0 +1,25 @@
+{
+  "name": "drawler-server",
+  "version": "1.0.0",
+  "description": "API for the drawler-app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alehuer07/Drawler.git"
+  },
+  "author": "Alexis Huerta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alehuer07/Drawler/issues"
+  },
+  "homepage": "https://github.com/alehuer07/Drawler#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
