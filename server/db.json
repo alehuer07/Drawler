@@ -1,0 +1,45 @@
+{
+  "sessionID": 123,
+  "phase": 1,
+  "players": {
+    "player_143": {
+      "session_adjectives": ["Hot", "Kingly", "Wholesome"],
+      "session_nouns": ["Big Bird", "Pillow", "Jake from State Farm"],
+      "session_characters": {
+        "Emotional Skateboard": {
+          "drawingID": "drawing_41233",
+          "votes": 0
+        },
+        "Weird BurgerKing": {
+          "drawingID": "drawing_56378",
+          "votes": 0
+        },
+        "Rock-Hard Tony": {
+          "drawingID": "drawing_86545",
+          "votes": 0
+        }
+      }
+    },
+
+    "player_318": {
+      "session_adjectives": ["Weird", "Emotional", "Rock-Hard"],
+      "session_nouns": ["Tony", "BurgerKing", "Skateboard"],
+      "session_characters": {
+        "Hot Pillow": {
+          "drawingID": "drawing_46563",
+          "votes": 0
+        },
+        "Hot Big Bird": {
+          "drawingID": "drawing_9356",
+          "votes": 0
+        },
+        "Kingly Jake from State Farm": {
+          "drawingID": "drawing_87803",
+          "votes": 0
+        }
+      }
+    }
+  },
+
+  "battles": {}
+}

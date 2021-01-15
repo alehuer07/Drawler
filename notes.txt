@@ -1,0 +1,50 @@
+const database = {
+  roomID1: {
+    users: [userId],
+    phase1: {
+      userId: {
+        adjectives: [],
+      },
+    },
+  },
+  roomID2: {},
+};
+
+const userAdj = ["funny", "slow", "fast"];
+
+// Frontend
+axios.post("/6/1/cisco", { data: userAdj });
+listen("next-phase", function () {
+  switchPage(phase + 1);
+});
+
+// backend
+const app = express();
+
+app.post("/new", (req, res) => {
+  const { roomName } = req.body;
+
+  database.create(roomName);
+});
+
+app.post("/join", (req, res) => {
+  const { roomName, userId } = req.body;
+
+  socketio.join(userId, roomName);
+  database.addUserToRoom(roomId, userId);
+});
+
+app.post("/:roomId/:phaseId/:userId", (req, res) => {
+  // get data
+  const { roomId, phaseId, userId } = req.params;
+
+  // insert data
+
+  // check if done
+  if (done) {
+    //send everyone message telling them to go to next phase
+    socketio.send("next-phase").to(roomId);
+  }
+
+  res.send({ msg: "wait" });
+});
