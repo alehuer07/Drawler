@@ -6,15 +6,18 @@
       "session_adjectives": ["Hot", "Kingly", "Wholesome"],
       "session_nouns": ["Big Bird", "Pillow", "Jake from State Farm"],
       "session_characters": {
-        "Emotional Skateboard": {
+        "char1": {
+          "name": "Emotional Skateboard",
           "drawingID": "drawing_41233",
           "votes": 0
         },
-        "Weird BurgerKing": {
+        "char2": {
+          "name": "Weird BurgerKing",
           "drawingID": "drawing_56378",
           "votes": 0
         },
-        "Rock-Hard Tony": {
+        "char3": {
+          "name": "Rock-Hard Tony",
           "drawingID": "drawing_86545",
           "votes": 0
         }
@@ -25,15 +28,18 @@
       "session_adjectives": ["Weird", "Emotional", "Rock-Hard"],
       "session_nouns": ["Tony", "BurgerKing", "Skateboard"],
       "session_characters": {
-        "Hot Pillow": {
+        "char1": {
+          "name": "Hot Pillow",
           "drawingID": "drawing_46563",
           "votes": 0
         },
-        "Hot Big Bird": {
+        "char2": {
+          "name": "Hot Big Bird",
           "drawingID": "drawing_9356",
           "votes": 0
         },
-        "Kingly Jake from State Farm": {
+        "char3": {
+          "name": "Kingly Jake from State Farm",
           "drawingID": "drawing_87803",
           "votes": 0
         }
