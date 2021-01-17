@@ -1,28 +1,27 @@
 // Importing dependencies
 const express = require("express");
-
 const router = express.Router();
+const cors = require("cors");
+
+const db = require("../firebase/firebase");
+
+router.use(cors());
 
 router.get("/", (req, res) => {
   res.send("SESSION");
 });
 
 router.get("/get-sessions", (req, res) => {
-  // Declare variables
-  let fs = require("fs");
-  let obj;
-
-  // Read the file and send to the callback
-  fs.readFile("./db.json", handleFile);
-
-  // Write the callback function
-  function handleFile(err, data) {
-    if (err) throw err;
-    obj = JSON.parse(data);
-    // You can now play with your data
-    console.log(obj);
-    res.send(obj);
-  }
+  db.collection("sessions")
+    .get()
+    .then((querySnapshot) => {
+      const documents = querySnapshot.docs.map((doc) => doc.data());
+      // do something with documents
+      res.json(documents);
+    })
+    .catch((err) => {
+      res.send("error: " + err);
+    });
 });
 
 router.get("/create-session", (req, res) => {
