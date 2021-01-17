@@ -9,11 +9,22 @@ import {
   FormLabel,
 } from "@chakra-ui/react";
 
+const axios = require("axios");
+
 const Name = (props) => {
   const [state, setState] = useState("");
 
   let handleSubmit = () => {
     console.log("click");
+    axios
+      .get("http://localhost:5000/session/create-session")
+      .then((res) => {
+        //handle success
+      })
+      .catch((error) => {
+        //handle error
+        console.log(error);
+      });
   };
 
   useEffect(() => {
